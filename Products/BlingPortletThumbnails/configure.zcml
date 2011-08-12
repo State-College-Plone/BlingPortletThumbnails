@@ -24,6 +24,26 @@
         description="Bling Slideshow Template Based on collective.truegallery"
         template="slideshow-tg.pt" />
         
+    <browser:resource
+        name="slideshow-tg.css"
+        file="slideshow-tg.css"
+    />
+    
+    <browser:resource
+        name="bling-slider.js"
+        file="bling-slider.js"
+    />
+    
+    <browser:resource
+        name="mootools-1.3.1.1-more.js"
+        file="mootools-1.3.1.1-more.js"
+    />
+    
+    <browser:resource
+        name="mootools-1.3.1-core.js"
+        file="mootools-1.3.1-core.js"
+    />
+    
 </configure>
 
 
