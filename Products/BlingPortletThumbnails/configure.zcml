@@ -3,9 +3,13 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:bling="http://namespaces.weblion.psu.edu/bling"
     i18n_domain="Products.BlingPortletThumbnails">
 
     <five:registerPackage package="." initialize=".initialize" />
+    
+    <include package="Products.BlingPortlet" />
+    <include package="Products.BlingPortlet" file="meta.zcml"/>
 
     <!-- Profiles -->
     <genericsetup:registerProfile
@@ -15,6 +19,11 @@
         description="Installs the 'Bling Portlet Thumbnails' product."
         provides="Products.GenericSetup.interfaces.EXTENSION" />
 
+    <bling:blingSlideshowView
+        name="slideshow-tg"
+        description="Bling Slideshow Template Based on collective.truegallery"
+        template="slideshow-tg.pt" />
+        
 </configure>
 
 
