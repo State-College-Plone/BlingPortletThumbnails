@@ -1,13 +1,11 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:bling="http://namespaces.weblion.psu.edu/bling"
     i18n_domain="Products.BlingPortletThumbnails">
 
-    <five:registerPackage package="." initialize=".initialize" />
-    
     <include package="Products.BlingPortlet" />
     <include package="Products.BlingPortlet" file="meta.zcml"/>
 
@@ -30,8 +28,8 @@
     />
     
     <browser:resource
-        name="bling-slider.js"
-        file="bling-slider.js"
+        name="bling-thumbnail.js"
+        file="bling-thumbnail.js"
     />
     
     <browser:resource
