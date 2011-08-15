@@ -1,4 +1,4 @@
 Introduction
 ============
 
-    A policy product for Plone.
+    A BlingPortlet product for Plone which includes thumbnails and navigation.
