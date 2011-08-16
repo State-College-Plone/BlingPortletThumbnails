@@ -25,7 +25,6 @@ setup(name='Products.BlingPortletThumbnails',
     zip_safe=False,
     install_requires=[
       'setuptools',
-      'Products.BlingPortlet', 
       # -*- Extra requirements: -*-
       ],
     entry_points="""
